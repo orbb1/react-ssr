@@ -1,22 +1,33 @@
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background: linear-gradient(217deg, #360168e8, #360168ad 70.71%),
+    linear-gradient(127deg, #ff00aaec, #ff00aa67 70.71%),
+    linear-gradient(336deg, #00581de8, #00581d8a 70.71%);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.title {
+  font-family: 'Courgette', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.login-form {
+  max-width: 35em;
+  margin: 1em auto;
+  padding: 1em;
+  box-shadow: 1px 1px 4px #fff;
+  border-radius: .5em;
 }
 
-.App-link {
-  color: #09d3ac;
+.login-form__input {
+  display: block;
+  height: 2em;
+  margin: 1em auto;
+  border-radius: .5em;
 }
