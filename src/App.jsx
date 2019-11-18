@@ -1,5 +1,7 @@
-import React, { useState, useRef } from "react";
-import "./App.css";
+import React, { useState, useRef } from 'react';
+import './App.css';
+import { Header } from './components'
+
 
 function App() {
   const usernameInput = useRef();
@@ -9,7 +11,7 @@ function App() {
     e.preventDefault();
     const username = usernameInput.current;
     const password = passwordInput.current;
-    if (username.value === "admin" && password.value === "admin") {
+    if (username.value === 'admin' && password.value === 'admin') {
       setIsLoggedIn(true);
       return;
     }
@@ -18,10 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <h1 className="title">Server side power!</h1>
-        <p>You don't need to enable JavaScript to run this app.</p>
-      </header>
+      <Header />
       <main>
         <h2>Simple login form</h2>
         <small>(Hint: try admin/admin)</small>
